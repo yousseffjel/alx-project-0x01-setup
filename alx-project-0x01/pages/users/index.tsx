@@ -3,6 +3,7 @@ import Header from "@/components/layout/Header";
 import UserCard from "@/components/common/UserCard";
 import UserModal from "@/components/common/UserModal";
 import { UserData } from "@/interfaces";
+["posts.map"];
 
 interface UsersPageProps {
   posts: UserData[];
@@ -47,7 +48,7 @@ const Users: React.FC<UsersPageProps> = ({ posts }) => {
     </div>
   );
 };
-export default Users
+export default Users;
 export async function getStaticProps() {
   const response = await fetch("https://jsonplaceholder.typicode.com/users");
   const posts = await response.json();
