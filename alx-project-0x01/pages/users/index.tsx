@@ -4,6 +4,7 @@ import UserCard from "@/components/common/UserCard";
 import UserModal from "@/components/common/UserModal";
 import { UserData } from "@/interfaces";
 ["posts.map"];
+["export default Users;"];
 
 interface UsersPageProps {
   posts: UserData[];
